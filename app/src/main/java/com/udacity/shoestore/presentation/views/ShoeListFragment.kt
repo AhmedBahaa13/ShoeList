@@ -19,7 +19,6 @@ import androidx.navigation.fragment.findNavController
 import com.udacity.shoestore.R
 import com.udacity.shoestore.databinding.FragmentShoeListBinding
 import com.udacity.shoestore.presentation.viewModels.ShoesViewModel
-import kotlinx.android.synthetic.main.fragment_shoe_list.*
 
 @SuppressLint("SetTextI18n")
 class ShoeListFragment : Fragment() {
@@ -29,7 +28,7 @@ class ShoeListFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = DataBindingUtil.inflate(
             layoutInflater,
             R.layout.fragment_shoe_list, container, false
