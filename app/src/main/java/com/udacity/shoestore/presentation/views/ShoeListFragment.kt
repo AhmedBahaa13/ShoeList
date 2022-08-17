@@ -3,10 +3,7 @@ package com.udacity.shoestore.presentation.views
 import android.annotation.SuppressLint
 import android.graphics.Color
 import android.os.Bundle
-import android.view.Gravity
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.content.res.AppCompatResources
@@ -15,6 +12,7 @@ import androidx.core.view.setPadding
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import androidx.navigation.NavOptions
 import androidx.navigation.fragment.findNavController
 import com.udacity.shoestore.R
 import com.udacity.shoestore.databinding.FragmentShoeListBinding
@@ -29,16 +27,14 @@ class ShoeListFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = DataBindingUtil.inflate(
-            layoutInflater,
-            R.layout.fragment_shoe_list, container, false
-        )
+        binding = FragmentShoeListBinding.inflate(inflater, container, false)
         return binding.root
     }
 
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        setHasOptionsMenu(true)
         initListeners()
         if (binding.linearLayout.childCount == 0) {
             val noItemsText = TextView(requireContext())
@@ -56,6 +52,19 @@ class ShoeListFragment : Fragment() {
             binding.linearLayout.addView(noItemsText)
             binding.linearLayout.gravity = Gravity.CENTER
         }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.menu_logout,menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return if (item.itemId == R.id.login) {
+            findNavController().navigate(R.id.loginFragment2,null,
+                NavOptions.Builder().setPopUpTo(R.id.nav_graph,true,true).setLaunchSingleTop(true).build())
+            true
+        }else
+        super.onOptionsItemSelected(item)
     }
 
 

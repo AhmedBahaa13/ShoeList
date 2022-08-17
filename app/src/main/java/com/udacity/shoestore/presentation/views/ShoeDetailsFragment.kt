@@ -25,19 +25,9 @@ class ShoeDetailsFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        initListeners()
         binding.viewModel = viewModel
         binding.lifecycleOwner = viewLifecycleOwner
     }
 
-    private fun initListeners() {
-        binding.save.setOnClickListener {
-
-        }
-
-        binding.cancel.setOnClickListener {
-
-        }
-    }
 
 }

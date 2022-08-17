@@ -33,18 +33,7 @@ class MainActivity : AppCompatActivity() {
         NavigationUI.setupActionBarWithNavController(this,navController)
     }
 
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.menu_logout,menu)
-        return true
-    }
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return if (item.itemId == R.id.login) {
-            navController.navigate(R.id.loginFragment2,null,NavOptions.Builder().setPopUpTo(R.id.nav_graph,true,true).setLaunchSingleTop(true).build())
-            true
-        }else
-            super.onOptionsItemSelected(item)
-    }
 
     override fun onSupportNavigateUp(): Boolean {
         return NavigationUI.navigateUp(navController,appBarConfiguration) || super.onSupportNavigateUp()
