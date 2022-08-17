@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">ShoeStore</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name">Name</string>
+    <string name="password">Password</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="welcome_back">Welcome Back.</string>
+    <string name="you_ve_been_missed">You\'ve been missed</string>
+    <string name="don_t_have_an_account_sign_up">Don\'t have an account ? Sign up</string>
+    <string name="welcome_to_our_app">Welcome To Shoe App</string>
+    <string name="let_s_dive_into_app_and_discover_it">Let\'s Dive Into App And Discover It</string>
+    <string name="go_to_home">Go To Home</string>
+    <string name="go_to_instructions">Go To Instructions</string>
+    <string name="exit">Exit</string>
+    <string name="title_activity_main">MainActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="add_new_shoe_details">Add New Shoe Details</string>
+    <string name="company">Company</string>
+    <string name="shoe_size">Shoe Size</string>
+    <string name="description">Description</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="todo">TODO</string>
+    <string name="start">Start</string>
+    <string name="you_can_add_shoes_as_you_like">You can add shoes as you like</string>
+    <string name="first_instruction">This App is Showing a list of shoes Which you add its</string>
+</resources>
