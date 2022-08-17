@@ -2,14 +2,14 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
-
+    <!-- i prefer use Constraint its make things more easy
+        and make responsive Ui -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/black"
         tools:context=".presentation.views.WelcomeFragment">
 
-        <!-- TODO: Update blank fragment layout -->
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/appCompatImageView"

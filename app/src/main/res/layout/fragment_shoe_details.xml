@@ -8,7 +8,8 @@
             name="viewModel"
             type="com.udacity.shoestore.presentation.viewModels.ShoesViewModel" />
     </data>
-
+    <!-- We use Constraint Layout because we have a large layout
+          and want make responsive Ui -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
